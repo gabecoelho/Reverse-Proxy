@@ -76,6 +76,7 @@ server {
 - Enter your email when prompted.
    - Select `A` to agree with terms.
    - Select option `2` when prompted to ensure you install the most complete and secure SSL certificate.
+- You can run the link provided in the terminal of your web service. It will test your SSL certificate (see Appendix II). 
 
 **4. Setup Certbot Auto-Renewal**
 Test the renewal process. If you see no errors, all is well!
@@ -83,6 +84,8 @@ Test the renewal process. If you see no errors, all is well!
 
 **5. Google Cloud Platform Final Config**
 - In your Firewall rules, make sure to remove the `tcp:5601` rule.
+
+Lastly, now, when you type your site name, you should be redirected to use HTTPS with a trusted certificate, and be prompted to enter a username and password for the Kibana admin config (see Appendix III).
 
 ## Troubleshooting
 1. Indentation is really important. Check all your config files and make sure they are all indented as instructed in lab 3.
@@ -99,3 +102,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-lo
 https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-9
 
 ## Appendix
+I. domain part
+II. ssl certificate test
+III. /login incognito
+
