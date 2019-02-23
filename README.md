@@ -86,7 +86,9 @@ Test the renewal process. If you see no errors, all is well!
 **5. Google Cloud Platform Final Config**
 - In your Firewall rules, make sure to remove the `tcp:5601` rule.
 
-Lastly, now, when you type your site name, you should be redirected to use HTTPS with a trusted certificate, and be prompted to enter a username and password for the Kibana admin config (see Appendix 3).
+If you want to better understand how all of these programs work together, see Appendix 5. The diagram shows exactly how each part interacts with the client-side of things.
+
+Lastly, now, when you type your website address, you should be redirected to use HTTPS with a trusted certificate, and be prompted to enter a username and password for the Kibana admin config (see Appendix 3).
 
 ## Troubleshooting
 1. Indentation is really important. Check all your config files and make sure they are all indented as instructed in lab 3.
