@@ -81,7 +81,16 @@ server {
 Test the renewal process. If you see no errors, all is well!
 - `sudo certbot renew --dry-run`
 
+**5. Google Cloud Platform Final Config**
+- In your Firewall rules, make sure to remove the `tcp:5601` rule.
+
 ## Troubleshooting
+1. Indentation is really important. Check all your config files and make sure they are all indented as instructed in lab 3.
+2. If your HTTPS configuration shows as "unsecure" when you browse to your site, consider closing all your tabs and reopen your site. You might need to use an incognito tab.
+3. Consider restarting nginx and kibana if your configuration is not working after all the previous steps.
+4. Sometimes if you try to configure your site using **www** it does not work. That's okay. If it works with your subdomain, you are all set!
+5. As in the previous lab, your Kibana configuration must not have `0.0.0.0` as the host anymore. You must change it to `localhost`.
+
 ## Sources
 - How to install ELK Stack + Filebeats. This tutorial also helps you install Nginx.
 https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-16-04
