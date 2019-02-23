@@ -82,5 +82,11 @@ Test the renewal process. If you see no errors, all is well!
 - `sudo certbot renew --dry-run`
 
 ## Troubleshooting
-## Sources 
+## Sources
+- How to install ELK Stack + Filebeats. This tutorial also helps you install Nginx.
+https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-16-04
+
+- How to Secure Nginx with Let's Encrypt
+https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-9
+
 ## Appendix
