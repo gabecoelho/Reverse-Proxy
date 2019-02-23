@@ -107,3 +107,4 @@ https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-
 **2.** <br><img src="https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/SSL%20Certificate.png"/><br>
 **3.** <br><img src="https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/login.png"/><br>
 **4.** <br><img src="https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/HTTPS%20displaying.png"/><br>
+**5.** <br><img src="https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/topology.JPG"/>
