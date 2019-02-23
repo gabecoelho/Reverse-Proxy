@@ -10,7 +10,7 @@ We assume lab 3 is working appropriately, and that you are using Debian 9 or oth
 ### * *Install and setup Nginx and a domain* *
 
 **1. First, setup a domain:**
-- If you already have a domain, you may add a new Zone Record with a subdomain. In this case, we are using `it366.gabeit.net` (see Appendix I).
+- If you already have a domain, you may add a new Zone Record with a subdomain. In this case, we are using `it366.gabeit.net` (see Appendix 1).
 
 **2. Setup nginx:**
 - `sudo apt-get update`
@@ -77,7 +77,7 @@ server {
 - Enter your email when prompted.
    - Select `A` to agree with terms.
    - Select option `2` when prompted to ensure you install the most complete and secure SSL certificate.
-- You can run the link provided in the terminal of your web service. It will test your SSL certificate (see Appendix II). 
+- You can run the link provided in the terminal of your web service. It will test your SSL certificate (see Appendix 2). 
 
 **4. Setup Certbot Auto-Renewal**
 Test the renewal process. If you see no errors, all is well!
@@ -86,7 +86,7 @@ Test the renewal process. If you see no errors, all is well!
 **5. Google Cloud Platform Final Config**
 - In your Firewall rules, make sure to remove the `tcp:5601` rule.
 
-Lastly, now, when you type your site name, you should be redirected to use HTTPS with a trusted certificate, and be prompted to enter a username and password for the Kibana admin config (see Appendix III).
+Lastly, now, when you type your site name, you should be redirected to use HTTPS with a trusted certificate, and be prompted to enter a username and password for the Kibana admin config (see Appendix 3).
 
 ## Troubleshooting
 1. Indentation is really important. Check all your config files and make sure they are all indented as instructed in lab 3.
@@ -103,7 +103,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-lo
 https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-9
 
 ## Appendix
-I. https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/Domains%20dashboard.png
-II. https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/SSL%20Certificate.png
-III. https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/login.png
-IV. https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/HTTPS%20displaying.png
+1. ![dashboard]https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/Domains%20dashboard.png
+2. ![certificate]https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/SSL%20Certificate.png
+3. ![login]https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/login.png
+4. ![https]https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/HTTPS%20displaying.png
