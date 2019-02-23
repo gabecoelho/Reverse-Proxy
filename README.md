@@ -7,16 +7,19 @@ This service is widely used to protect confidentiality and integrity of web serv
 
 ## Methodology
 We assume lab 3 is working appropriately, and that you are using Debian 9 or other Linux distro.
-### Install and setup Nginx and a domain
+### * *Install and setup Nginx and a domain* *
+
 **1. First, setup a domain:**
-- If you already have a domain, you may add a new Zone Record with a subdomain. In this case, we are using `it366.gabeit.net` 
-   (see Appendix I).
+- If you already have a domain, you may add a new Zone Record with a subdomain. In this case, we are using `it366.gabeit.net` (see Appendix I).
+
 **2. Setup nginx:**
 - `sudo apt-get update`
 - `sudo apt install nginx`
+
 **3. Setup a password for your Kibana instance hosted in your Nginx server:**
 - ``echo "ENTER_YOUR_ADMIN_USERNAME_HERE:`openssl passwd -apr1`" | sudo tee -a /etc/nginx/htpasswd.users``
 - You will input your secure password twice, and select the next options.
+
 **4. Create an Nginx server block file:**
 - `sudo nano /etc/nginx/sites-available/YOURSUBDOMAIN.DOMAIN.COM`
 - Add the following block of code to your file (notice the part you have to edit and add your domain)
@@ -39,16 +42,20 @@ server {
     }
 }
 ```
+
 **5. Create a sybmolic link to the sites-enabled directory in your Nginx configuration.**
 - `sudo ln -s /etc/nginx/sites-available/YOURSUBDOMAIN.DOMAIN.COM /etc/nginx/sites-enabledYOURSUBDOMAIN.DOMAIN.COM`
 - Restart Nginx
    - `sudo systemctl restart nginx`
+
 **6. Allow connections to Nginx from your ufw firewall and disable the HTTP allowance:**
 - `sudo ufw allow 'Nginx Full'`
 - `sudo ufw delete allow 'Nginx HTTP'`
 
-### Use `Let's encrypt` to obtain SSL Certificate and install Certbot
-**1. Add the backports repositories to your sources list to be updated when your server is updated and isntall Certbot:**
+
+### * *Use `Let's encrypt` to obtain SSL Certificate and install Certbot* *
+
+**1. Add the backports repositories to your sources list to be updated when your server is updated and install Certbot:**
 - `sudo nano /etc/apt/sources.list`
 - Add the following two linest to the bottom of the file:
    - `deb http://deb.debian.org/debian stretch-backports main contrib non-free`
@@ -57,16 +64,19 @@ server {
    - `sudo apt update`
 - Install Certbot Nginx package
    - `sudo apt install python-certbot-nginx -t stretch-backports`
+
 **2. Test and reload/restart the Nginx configuration**
 - `sudo nginx -t`
    - You should see a message saying: `nginx: the configuration file /etc/nginx/nginx.conf syntax is ok`
 - `sudo systemctl reload nginx`
+
 **3. Obtain SSL Certificate**
 - Run:
    - `sudo certbot --nginx -d YOURSUBDOMAIN.DOMAIN.COM`
 - Enter your email when prompted.
    - Select `A` to agree with terms.
    - Select option `2` when prompted to ensure you install the most complete and secure SSL certificate.
+
 **4. Setup Certbot Auto-Renewal**
 Test the renewal process. If you see no errors, all is well!
 - `sudo certbot renew --dry-run`
