@@ -15,6 +15,7 @@ We assume lab 3 is working appropriately, and that you are using Debian 9 or oth
 **2. Setup nginx:**
 - `sudo apt-get update`
 - `sudo apt install nginx`
+- `sudo systemctl enable nginx` (Enable at boot)
 
 **3. Setup a password for your Kibana instance hosted in your Nginx server:**
 - ``echo "ENTER_YOUR_ADMIN_USERNAME_HERE:`openssl passwd -apr1`" | sudo tee -a /etc/nginx/htpasswd.users``
