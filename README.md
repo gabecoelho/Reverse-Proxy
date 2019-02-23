@@ -103,7 +103,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-lo
 https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-9
 
 ## Appendix
-I. (images/Domain\ dashboard.png)
-II. (images/SSL\ certificate.png)
-III. (images/login.png)
-
+I. https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/Domains%20dashboard.png
+II. https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/SSL%20Certificate.png
+III. https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/login.png
+IV. https://github.com/gabecoelho/https-ssl-certificate/blob/master/images/HTTPS%20displaying.png
