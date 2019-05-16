@@ -1,4 +1,4 @@
-# Gabe Coelho - HTTP and Reverse Proxy
+# HTTP and Reverse Proxy
 Technical guide to protecting Kibana using nginx with HTTPS as a reverse proxy.
 
 ## Summary
